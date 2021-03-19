@@ -1,0 +1,35 @@
+/* tarjetas */
+.cards{
+    display: flex;
+    justify-content: space-evenly;  
+    flex-wrap:wrap ;
+  }
+  .cards .card{
+    background: #4b0684b3 ;
+    display: flex;
+    width: 500px;
+    height: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin: 8px;
+  }
+  .cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    border: 3px solid #10001db3;
+    border-radius: 50%;
+  }
+  .cards .card > .contenido-texto-card{
+    width:60%;
+    color: #fff;
+  }
+  .cards.card >.contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+  }
+  .contenido-texto-card > p{
+    margin: 15px 0px;
+  }

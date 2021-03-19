@@ -1,0 +1,33 @@
+/* Estudios */
+.estudio-cont{
+    display: flex;
+    justify-content: space-around;
+  }
+  .imagen-about{
+    width: 60%;
+  }
+  .estudio-cont .estudio-ind{
+    width: 80%;
+  }
+  .estudio-ind > h3{
+    font-size: 140%;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 15px; 
+  }
+  .estudio-ind > p{
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+  .estudio-ind p span{
+    background: crimson;
+    color: #fff;
+    border-radius: 25%;
+    display: inline-block;
+    text-align: center;
+    width: 10%;
+    height: 10%;
+    padding: 2px;
+  }
+ 

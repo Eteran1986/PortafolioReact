@@ -1,0 +1,74 @@
+.texto-header h1{
+    line-height: 40pt;
+    font-size: 40px;
+    color:#fff; 
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    transition: all 0.5s ease;  
+  }/* darle estilo al texto h2 */
+  .texto-header h2{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    color:rgb(255, 255, 255); 
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);    
+  }/* centrar el texto h1, h2 y contacto  */
+  header .texto-header{
+    display: flex;
+    height: 500px;
+    padding: 0px 40px;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+  }
+  /* wave*/
+  .ocean { 
+    height: 200px;
+    width:100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+    .ocean.v01 .wave {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  }
+    .ocean.v01 {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+    .wave {
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+
+    position: absolute;
+    bottom: -25px;
+    width: 6400px;
+    height: 100%;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+    .wave:nth-of-type(2) {
+    bottom: -25px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+  
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translateY(-25px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+  }
